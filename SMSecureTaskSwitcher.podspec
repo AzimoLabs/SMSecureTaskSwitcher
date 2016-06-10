@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SMSecureTaskSwitcher'
   s.version          = '0.1.0'
-  s.summary          = 'Hide data visible in task switcher when your app is in background.'
+  s.summary          = 'Use custom view for application preview in iOS Task Switcher'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This lib provides the ability to hide data visible in task switcher when your app is in background.
+Simple library created in order to help with customisation of TaskSwitcher app preview. Presented example replaces preview with blured screenshot but thanks to this tool you are able to use completely custom view as a preview.
                        DESC
 
   s.homepage         = 'https://github.com/AzimoLabs/SMSecureTaskSwitcher'
