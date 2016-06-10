@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SMSecureTaskSwitcher_Example' do
+  pod 'SMSecureTaskSwitcher', :path => '../'
+
+  target 'SMSecureTaskSwitcher_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
