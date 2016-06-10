@@ -8,22 +8,37 @@
 
 #import "SMViewController.h"
 
-@interface SMViewController ()
+@interface SMViewController ()<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *tfName;
+@property (weak, nonatomic) IBOutlet UITextField *tfBirthDay;
 
 @end
 
 @implementation SMViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self addHideKeyboardEventHandler];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addHideKeyboardEventHandler {
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [tapGestureRecognizer setNumberOfTouchesRequired:1];
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+    self.view.userInteractionEnabled = YES;
+}
+
+- (void)hideKeyboard {
+    [self.view endEditing:YES];
+}
+
+- (IBAction)secure:(id)sender {
+    CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
+    UIColor *color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    self.view.backgroundColor = color;
 }
 
 @end

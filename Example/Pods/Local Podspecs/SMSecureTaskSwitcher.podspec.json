@@ -1,22 +1,23 @@
 {
   "name": "SMSecureTaskSwitcher",
   "version": "0.1.0",
-  "summary": "A short description of SMSecureTaskSwitcher.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SMSecureTaskSwitcher",
+  "summary": "Hide data visible in task switcher when your app is in background.",
+  "description": "This lib provides the ability to hide data visible in task switcher when your app is in background.",
+  "homepage": "https://github.com/AzimoLabs/SMSecureTaskSwitcher",
   "license": {
-    "type": "MIT",
+    "type": "Apache 2.0",
     "file": "LICENSE"
   },
   "authors": {
-    "Mateusz Kuźnik": "matkuznik@gmail.com"
+    "Mateusz Kuźnik": "mateusz.kuznik@azimo.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SMSecureTaskSwitcher.git",
+    "git": "https://github.com/AzimoLabs/SMSecureTaskSwitcher.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/AzimoLabs",
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
   "source_files": "SMSecureTaskSwitcher/Classes/**/*"
 }
