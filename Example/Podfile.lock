@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (2.4.0)
+  - SMSecureTaskSwitcher (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - SMSecureTaskSwitcher (from `../`)
+
+EXTERNAL SOURCES:
+  SMSecureTaskSwitcher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  SMSecureTaskSwitcher: 1a4dc9eb4f72245328424a56df75c3be9643c1a8
+
+PODFILE CHECKSUM: 17597c4bf8c859ffa542cd08d3eca5a3e778758f
+
+COCOAPODS: 1.0.1

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SMSecureTaskSwitcher'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SMSecureTaskSwitcher.'
+  s.summary          = 'Hide data visible in task switcher when your app is in background.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This lib provides the ability to hide data visible in task switcher when your app is in background.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/SMSecureTaskSwitcher'
+  s.homepage         = 'https://github.com/AzimoLabs/SMSecureTaskSwitcher'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Mateusz Kuźnik' => 'matkuznik@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/SMSecureTaskSwitcher.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
+  s.author           = { 'Mateusz Kuźnik' => 'mateusz.kuznik@azimo.com' }
+  s.source           = { :git => 'https://github.com/AzimoLabs/SMSecureTaskSwitcher.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/AzimoLabs'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'SMSecureTaskSwitcher/Classes/**/*'
   

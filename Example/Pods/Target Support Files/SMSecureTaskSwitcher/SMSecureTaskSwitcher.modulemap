@@ -1,0 +1,6 @@
+framework module SMSecureTaskSwitcher {
+  umbrella header "SMSecureTaskSwitcher-umbrella.h"
+
+  export *
+  module * { export * }
+}
