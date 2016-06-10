@@ -23,13 +23,13 @@ The easiest way to use is add two line of code in your AppDelegate.
 
 Firstly you have to initialize `SMSecureTaskSwitcher` class:
 
-```
+```objective-c
 self.secureTaskSwitcher = [SMSecureTaskSwitcher new];
 ```
 
 secondly call `SMSecureTaskSwitcher:applicationDidEnterBackground` every time application is going to background state:
 
-```
+```objective-c
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     [self.secureTaskSwitcher applicationDidEnterBackground];
 }
