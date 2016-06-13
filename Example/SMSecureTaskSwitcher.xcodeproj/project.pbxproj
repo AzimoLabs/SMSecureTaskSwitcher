@@ -19,8 +19,9 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		61B96AF11D0E9357001C1117 /* SecureTaskSwitcherBlurredConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B96AF01D0E9357001C1117 /* SecureTaskSwitcherBlurredConfigurationTests.m */; };
 		61BE5D071D0ADA4E00C96A4A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BE5D061D0ADA4E00C96A4A /* Launch Screen.storyboard */; };
+		61BE5D0B1D0AEBB300C96A4A /* SecureTaskSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BE5D0A1D0AEBB300C96A4A /* SecureTaskSwitcherTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A691C9B375C69CF669522FEC /* Pods_SMSecureTaskSwitcher_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD32EB9AFBF2A01448047702 /* Pods_SMSecureTaskSwitcher_Example.framework */; };
 		A7940999812371FBCE75059D /* Pods_SMSecureTaskSwitcher_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8A2D76FDFE1F8C1F344E9A /* Pods_SMSecureTaskSwitcher_Tests.framework */; };
@@ -57,9 +58,10 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		61B96AF01D0E9357001C1117 /* SecureTaskSwitcherBlurredConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureTaskSwitcherBlurredConfigurationTests.m; sourceTree = "<group>"; };
 		61BE5D061D0ADA4E00C96A4A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		61BE5D0A1D0AEBB300C96A4A /* SecureTaskSwitcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureTaskSwitcherTests.m; sourceTree = "<group>"; };
 		6DFD21A0757C7C77F727D758 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		782A943F7DB314D0FA172BEB /* Pods-SMSecureTaskSwitcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSecureTaskSwitcher_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMSecureTaskSwitcher_Tests/Pods-SMSecureTaskSwitcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -170,7 +172,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				61B96AF01D0E9357001C1117 /* SecureTaskSwitcherBlurredConfigurationTests.m */,
+				61BE5D0A1D0AEBB300C96A4A /* SecureTaskSwitcherTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -404,7 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				61B96AF11D0E9357001C1117 /* SecureTaskSwitcherBlurredConfigurationTests.m in Sources */,
+				61BE5D0B1D0AEBB300C96A4A /* SecureTaskSwitcherTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +566,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Kiwi\"",
+					"-ObjC",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSecureTaskSwitcher_Example.app/SMSecureTaskSwitcher_Example";
@@ -582,6 +594,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Kiwi\"",
+					"-ObjC",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSecureTaskSwitcher_Example.app/SMSecureTaskSwitcher_Example";
