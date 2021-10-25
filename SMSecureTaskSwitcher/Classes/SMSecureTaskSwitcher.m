@@ -75,10 +75,6 @@
 }
 
 - (void)applicationWillEnterForeground {
-    /**
-     [self updateSecureView]; is a workaround for bug on iOS 8, which causes in some case freeze the UI
-    */
-    [self updateSecureView];
     self.secureWindow.hidden = YES;
 }
 
