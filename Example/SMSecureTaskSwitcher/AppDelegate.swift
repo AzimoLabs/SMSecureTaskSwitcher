@@ -14,11 +14,12 @@ import SMSecureTaskSwitcher
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var secureTaskSwitcher: SMSecureTaskSwitcher?
+    var secureTaskSwitcher: SecureTaskSwitcher?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        secureTaskSwitcher = SMSecureTaskSwitcher()
+        secureTaskSwitcher = SecureTaskSwitcher()
+    
         return true
     }
 
