@@ -131,6 +131,7 @@
 		974683CC845A705C9B2BAABC7927C551 /* KWRespondToSelectorMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9795227F493D9349B527EB839486C8E6 /* KWRespondToSelectorMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		98486223BAAAC2E8BF7A6E829FEB2E25 /* NSObject+KiwiMockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309AAF7264238FA8DE25CFFF363DDC /* NSObject+KiwiMockAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		987CDB4CA9BC6312EB8C05B8BEA8B2BD /* KWBeforeAllNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 537246790B000BF28806EC8A95EFC43A /* KWBeforeAllNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		99731D6A2726E783008FA131 /* SecureTaskSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99731D692726E783008FA131 /* SecureTaskSwitcher.swift */; };
 		9A694B2376754313C31F5F45B4DB08F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
 		9A74C28DABF74EDBBB067EC17873D052 /* NSObject+KiwiVerifierAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBABFCA70F6133558ABE6BE80A3EE9D /* NSObject+KiwiVerifierAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9AC9F622AB88D96C0B149F81F74833A0 /* KWLetNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A07574BD22EB7DCB59280DEA7B54E770 /* KWLetNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -376,6 +377,7 @@
 		97B2B5A815DE7579C36A30DA34127777 /* SMSecureTaskSwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMSecureTaskSwitcher-dummy.m"; sourceTree = "<group>"; };
 		97EE0E7D5A457754CA9129144F6D53E1 /* KWWorkarounds.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWWorkarounds.m; path = Classes/Core/KWWorkarounds.m; sourceTree = "<group>"; };
 		99260720335BE8EF09BC4D40C31D6C22 /* KWStringUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWStringUtilities.m; path = Classes/Core/KWStringUtilities.m; sourceTree = "<group>"; };
+		99731D692726E783008FA131 /* SecureTaskSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTaskSwitcher.swift; sourceTree = "<group>"; };
 		99C1A9EB3129EFA7C658E4D5956CED85 /* KWNilMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNilMatcher.m; path = Classes/Matchers/KWNilMatcher.m; sourceTree = "<group>"; };
 		99D9605AC0287E13A568F87C9F0B5741 /* KWStringUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStringUtilities.h; path = Classes/Core/KWStringUtilities.h; sourceTree = "<group>"; };
 		99F6294A8F07C181496F6F2EF578E1EE /* NSObject+KiwiVerifierAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KiwiVerifierAdditions.h"; path = "Classes/Core/NSObject+KiwiVerifierAdditions.h"; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 				C277744D1D4006F8BE0FA83AA3A19652 /* SMSecureTaskSwitcherConfiguration.h */,
 				9A02F164635F766635F5CC742758FDB6 /* UIImage+ImageEffects.h */,
 				2562F19B8781E4538F344C939D9F824F /* UIImage+ImageEffects.m */,
+				99731D692726E783008FA131 /* SecureTaskSwitcher.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1072,6 +1075,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1F9A47636CEB62C31D1F0B19F43AC6BF = {
+						LastSwiftMigration = 1300;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1210,6 +1218,7 @@
 			files = (
 				155C36F0C9178EB9B2DFB7BF64593CAC /* SMSecureTaskSwitcher-dummy.m in Sources */,
 				15066D3555BF2E9D3F3A7E24586F46A2 /* SMSecureTaskSwitcher.m in Sources */,
+				99731D6A2726E783008FA131 /* SecureTaskSwitcher.swift in Sources */,
 				38D8F90A476402460B13CC022321A71B /* SMSecureTaskSwitcherBlurredConfiguration.m in Sources */,
 				D0D52AE96D326209BAEEF9763A262CB6 /* UIImage+ImageEffects.m in Sources */,
 			);
@@ -1275,6 +1284,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72565D4D687018E614DD8CB38C329B61 /* SMSecureTaskSwitcher.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1294,6 +1304,8 @@
 				PRODUCT_NAME = SMSecureTaskSwitcher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1536,6 +1548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72565D4D687018E614DD8CB38C329B61 /* SMSecureTaskSwitcher.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1555,6 +1568,7 @@
 				PRODUCT_NAME = SMSecureTaskSwitcher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
